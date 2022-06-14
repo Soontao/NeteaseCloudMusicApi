@@ -7,4 +7,4 @@ RUN npm install -g npm husky
 RUN npm install --production
 
 EXPOSE 3000
-CMD ["node", "app.js"]
+CMD ["node", "--max-old-space-size=100", "app.js"]
